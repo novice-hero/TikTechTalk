@@ -19,7 +19,7 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 ### 요약
 
 1. 가장 먼저 `constructor`가 실행됩니다.
-2. `getDerivedStateFromProps` ****를 정의했다면 `render`가 호출되기 전에 props와 state를 판단하여 업데이트를 할지 말지 결정합니다. (마운트, 업데이트)
+2. `getDerivedStateFromProps`를 정의했다면 `render`가 호출되기 전에 props와 state를 판단하여 업데이트를 할지 말지 결정합니다. (마운트, 업데이트)
 3. `render`를 호출하여 첫 렌더링을 합니다.
 4. 첫 렌더링이 끝났다면 `componentDidMount`를 호출합니다.
 5. 만약 컴포넌트 내에서 변화가 감지되었다면 `componentDidUpdate`를 호출합니다.
