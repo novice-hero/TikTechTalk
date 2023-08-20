@@ -135,6 +135,8 @@ this.props와 nextProps, this.state와 nextState를 비교해서 false를 반환
 
 - 이 메서드는 성능 최적화만을 위해 사용합니다.
 - 메서드 내부에서 JSON.stringify를 사용하지 않아야 합니다.
+  - JSON.stringify는 비용이 많이 드는 작업인데 shouldComponentUpdate에 사용한다면 리렌더링이 될 때마다 실행됩니다. 따라서 성능에 좋지 못합니다.
+  - 원했던 것보다 더 최적화될 수 있습니다.
 - false를 반환해도 state가 변경된다면 자식 컴포넌트의 리렌더링을 막지 못합니다.
 - 함수형 컴포넌트의 memo로 최적화하는 것과 유사합니다.
 
